@@ -18,11 +18,15 @@
         
         // default name is 'Guest'
     	if (!name || name === ' ') {
-    	   name = "Guest";	
+    	   prompt(Please enter a Name);
+           var name = prompt("Enter your chat name:", "");
     	}
+
+        else{
     	
-    	// strip tags
     	name = name.replace(/(<([^>]+)>)/ig,"");
+
+        }
     	
     	// display name on page
     	$("#name-area").html("You are: <span>" + name + "</span>");
