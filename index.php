@@ -18,7 +18,7 @@
         
         // default name is 'Guest'
     	if (!name || name === ' ') {
-    	   alert(Please enter a Name);
+    	   window.alert(Please enter a Name);
            var name = prompt("Enter your chat name:", "");
     	}
 
