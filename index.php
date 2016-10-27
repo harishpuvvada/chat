@@ -65,7 +65,7 @@
                     var length = text.length; 
                      
                     // send 
-                    if ((length <= maxLength + 1)&&(name!=null)){ 
+                    if ((length <= maxLength + 1)&&(name!=null)&&(name!=="")){ 
                      
     			        chat.send(text, name);	
     			        $(this).val("");
