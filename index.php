@@ -14,20 +14,20 @@
     <script type="text/javascript">
     
         // ask user for name with popup prompt    
-        var name = prompt("Enter your chat name:", "");
+       // var name = prompt("Enter your chat name:", "");
         
         // default name is 'Guest'
     	//if (!name || name === ' ') {
-            if(name == null || name == ""){
-    	   window.alert("Please enter a Name");
+            while((name == null || name == "")){
+    	   //window.alert("Please enter a Name");
            var name = prompt("Enter your chat name:", "");
     	}
 
-        else{
+        //else{
     	
     	name = name.replace(/(<([^>]+)>)/ig,"");
 
-        }
+       // }
     	
     	// display name on page
     	$("#name-area").html("You are: <span>" + name + "</span>");
