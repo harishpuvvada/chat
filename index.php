@@ -35,7 +35,7 @@
 
         else{*/
     	
-    	name = name.replace(/(<([^>]+)>)/ig,"");
+    	//name = name.replace(/(<([^>]+)>)/ig,"");
 
         //}
     	
