@@ -16,11 +16,11 @@
     	 case('update'):
         	$state = $_POST['state'];
         	if(file_exists('chat.txt')){
-        	   $lines = file('chat.txt');
+        	   $lines = file('              $log['state'] = $state;
+chat.txt');
         	 }
         	 $count =  count($lines);
         	 if($state == $count){
-        		 $log['state'] = $state;
         		 $log['text'] = false;
         		 
         		 }

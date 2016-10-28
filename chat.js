@@ -1,8 +1,3 @@
-/* 
-Created by: Kenrick Beckett
-
-Name: Chat Engine
-*/
 
 var instanse = false;
 var state;
@@ -50,9 +45,10 @@ function updateChat(){
 						},
 			   dataType: "json",
 			   success: function(data){
+			   	    console.log(data);
 				   if(data.text){
 						for (var i = 0; i < data.text.length; i++) {
-                            $('#chat-area').append($("<p>"+ data.text[i] +"</p>"));
+                      	      $('#chat-area').append($("<p>"+ data.text[i] +"</p>"));
                         }								  
 				   }
 				   document.getElementById('chat-area').scrollTop = document.getElementById('chat-area').scrollHeight;
